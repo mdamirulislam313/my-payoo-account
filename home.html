@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Home Page</title>
+
+    <!-- ✅ সঠিক Tailwind + DaisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="flex justify-center bg-gray-100 min-h-screen items-center">
+    <main>
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display bg-gray-500 p-4">
+          <!-- Available Balance -->
+          <div class="flex justify-center mb-4 mt-20">
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-value text-white">9400</div>
+                <div class="stat-desc text-white">Available Balance</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- User Action Buttons -->
+          <div class="flex justify-center gap-2 mb-4">
+            <button class="btn btn-primary">Add Money</button>
+            <button class="btn btn-secondary">Cash Out</button>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Add Money Form -->
+          <div class="card bg-base-100 w-full max-w-sm shadow-xl text-black">
+            <div class="card-body space-y-3">
+              <fieldset class="fieldset space-y-2">
+                <label class="label text-white">Amount</label>
+                <input id="input-add-money"
+                  type="text"
+                  class="input input-bordered w-full text-white"
+                  placeholder="Amount"
+                />
+                <label class="label text-white">pin</label>
+                <input id="input-pin-number"
+                  type="password"
+                  class="input input-bordered w-full autocomplete text-white"
+                  placeholder="pin number"
+                />
+                <button id="btn-add-money" class="btn btn-neutral mt-4 w-full">Add Money</button>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- End Form -->
+        </div>
+      </div>
+    </main>
+    <script src="js/hme.js"></script>
+  </body>
+</html>
