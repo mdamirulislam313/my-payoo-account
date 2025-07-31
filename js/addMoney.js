@@ -13,6 +13,6 @@ document.getElementById('btn-add-money')
     document.getElementById('account-balance').innerText = newBalance;
    }
    else{
-    console.log('wrong your pin number please tray again')
+    alert('wrong your pin number please tray again')
    }
 })
