@@ -21,8 +21,13 @@
           <!-- Available Balance -->
           <div class="flex justify-center mb-4 mt-20">
             <div class="stats shadow">
-              <div id="account-balance" class="stat">
-                <div class="stat-value text-white">9400</div>
+              <div class="stat">
+                <div
+                  id="account-balance"
+                  class="stat-value text-white flex justify-center"
+                >
+                  9400
+                </div>
                 <div class="stat-desc text-white">Available Balance</div>
               </div>
             </div>
@@ -39,30 +44,61 @@
           <div class="divider"></div>
 
           <!-- Add Money Form -->
-          <div class="card bg-base-100 w-full max-w-sm shadow-xl text-black">
+          <div class="hidden card bg-base-100 w-full max-w-sm shadow-xl text-black">
             <div class="card-body space-y-3">
               <fieldset class="fieldset space-y-2">
                 <label class="label text-white">Amount</label>
-                <input id="input-add-money"
+                <input
+                  id="input-add-money"
                   type="text"
                   class="input input-bordered w-full text-white"
                   placeholder="Amount"
                 />
                 <label class="label text-white">pin</label>
-                <input id="input-pin-number"
+                <input
+                  id="input-pin-number"
                   type="password"
                   class="input input-bordered w-full autocomplete text-white"
                   placeholder="pin number"
                 />
-                <button id="btn-add-money" class="btn btn-neutral mt-4 w-full">Add Money</button>
+                <button id="btn-add-money" class="btn btn-neutral mt-4 w-full">
+                  Add Money
+                </button>
               </fieldset>
             </div>
           </div>
-
           <!-- End Form -->
+
+          <!-- cash out start -->
+          <div class="card bg-base-100 w-full max-w-sm shadow-xl text-black">
+            <div class="card-body space-y-3">
+              <fieldset class="fieldset space-y-2">
+                <label class="label text-white">Amount</label>
+                <input
+                  id="input-cash-out"
+                  type="text"
+                  class="input input-bordered w-full text-white"
+                  placeholder="Cash out Amount"
+                />
+                <label class="label text-white">pin</label>
+                <input
+                  id="cash-out-pin"
+                  type="password"
+                  class="input input-bordered w-full autocomplete text-white"
+                  placeholder="pin number"
+                />
+                <button id="btn-cash-out" class="btn btn-neutral mt-4 w-full">
+                  Cash out
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- cash out end -->
         </div>
       </div>
     </main>
-    <script src="js/hme.js"></script>
+    <!-- <script src="js/hme.js"></script> -->
+    <!-- <script src="js/addMoney.js"></script> -->
+     <script src="js/cash-out.js"></script>
   </body>
 </html>
