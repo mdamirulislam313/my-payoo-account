@@ -37,14 +37,14 @@
 
           <!-- User Action Buttons -->
           <div class="flex justify-center gap-2 mb-4">
-            <button class="btn btn-primary">Add Money</button>
-            <button class="btn btn-secondary">Cash Out</button>
+            <button id="btn-show-add-money" class="btn btn-primary">Add Money</button>
+            <button id="btn-show-cash-out" class="btn btn-secondary">Cash Out</button>
           </div>
 
           <div class="divider"></div>
 
           <!-- Add Money Form -->
-          <div class="hidden card bg-base-100 w-full max-w-sm shadow-xl text-black">
+          <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shadow-xl text-black">
             <div class="card-body space-y-3">
               <fieldset class="fieldset space-y-2">
                 <label class="label text-white">Amount</label>
@@ -70,7 +70,7 @@
           <!-- End Form -->
 
           <!-- cash out start -->
-          <div class="card bg-base-100 w-full max-w-sm shadow-xl text-black">
+          <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shadow-xl text-black">
             <div class="card-body space-y-3">
               <fieldset class="fieldset space-y-2">
                 <label class="label text-white">Amount</label>
@@ -98,7 +98,8 @@
       </div>
     </main>
     <!-- <script src="js/hme.js"></script> -->
-    <!-- <script src="js/addMoney.js"></script> -->
+    <script src="js/addMoney.js"></script>
      <script src="js/cash-out.js"></script>
+     <script src="js/features.js"></script>
   </body>
 </html>
